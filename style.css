@@ -6,36 +6,54 @@ body {
   line-height: 1.6;
   background-color: #f7f9fc;
   color: #333;
+  margin-right: 180px; /* Para dejar espacio al sidebar */
 }
 
-/* --- NAVBAR --- */
-nav {
+/* --- SIDEBAR MENU --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 100%;
   background-color: #0d47a1;
-  padding: 10px 0;
-}
-
-.navbar {
-  list-style: none;
   display: flex;
-  justify-content: center;
-  margin: 0;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
-.navbar li {
-  margin: 0 15px;
+.sidebar li {
+  margin: 20px 0;
+  text-align: center;
 }
 
-.navbar a {
+.sidebar a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
-  transition: color 0.3s;
+  display: block;
+  padding: 10px;
+  transition: background-color 0.3s;
 }
 
-.navbar a:hover {
-  color: #ffeb3b;
+.sidebar a:hover {
+  background-color: #1976d2;
+}
+
+/* --- MAIN CONTENT --- */
+main {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
 }
 
 /* --- HEADER --- */
@@ -58,8 +76,7 @@ header p {
 /* --- SECTIONS --- */
 section {
   padding: 40px 20px;
-  max-width: 800px;
-  margin: auto;
+  margin-bottom: 40px;
 }
 
 section h2 {
@@ -80,6 +97,7 @@ ul li {
   display: flex;
   gap: 15px;
   margin-top: 10px;
+  justify-content: center;
 }
 
 .social-icons a {
@@ -105,23 +123,42 @@ footer {
   padding: 20px;
   background-color: #0d47a1;
   color: white;
+  margin-top: 40px;
 }
 
 /* --- RESPONSIVE (CELULARES) --- */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
+  body {
+    margin-right: 0;
   }
 
-  .navbar li {
-    margin: 10px 0;
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    flex-direction: row;
+    padding-top: 0;
+    justify-content: space-around;
   }
 
-  header, section {
-    padding: 30px 15px;
+  .sidebar ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
   }
 
-  header p {
-    font-size: 16px;
+  .sidebar li {
+    margin: 0;
+  }
+
+  .sidebar a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  main {
+    padding-bottom: 70px; /* Para evitar que el menú tape contenido */
   }
 }
