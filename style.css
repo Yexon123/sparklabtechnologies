@@ -36,17 +36,22 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .logo {
   font-weight: 900;
   font-size: 1.8rem;
   letter-spacing: 2px;
   user-select: none;
+  flex: 1 1 auto;
 }
 .nav-list {
   list-style: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: flex-end;
 }
 .nav-link {
   font-weight: 600;
@@ -63,7 +68,7 @@ a:hover {
 .hero {
   background: linear-gradient(135deg, #001f4d, #004080);
   color: white;
-  padding: 120px 20px;
+  padding: 100px 20px 60px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,7 +79,7 @@ a:hover {
   flex: 1 1 400px;
 }
 .hero-text h1 {
-  font-size: 3rem;
+  font-size: 2.6rem;
   margin-bottom: 20px;
   font-weight: 900;
 }
@@ -173,6 +178,7 @@ a:hover {
   font-weight: 700;
   font-size: 1.25rem;
   color: #001f4d;
+  flex-wrap: wrap;
 }
 
 /* About */
@@ -278,7 +284,7 @@ a:hover {
   background-color: #1ebe5d;
 }
 
-/* Responsive */
+/* Responsive adjustments */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -286,6 +292,7 @@ a:hover {
   }
   .hero-image {
     max-width: 100%;
+    margin-top: 25px;
   }
   .services-grid {
     flex-direction: column;
@@ -295,12 +302,24 @@ a:hover {
     flex-direction: column;
     gap: 20px;
   }
+  .nav-list {
+    justify-content: center;
+    gap: 20px;
+  }
 }
+
 @media (max-width: 600px) {
   .hero-text h1 {
     font-size: 2rem;
   }
   .contact-form button {
     width: 100%;
+  }
+  .nav-list {
+    gap: 15px;
+  }
+  .social-icons a {
+    font-size: 1.5rem;
+    margin-right: 15px;
   }
 }
