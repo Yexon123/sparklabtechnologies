@@ -1,165 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>SparkLab Technologies | AI Cybersecurity Solutions</title>
-<link rel="stylesheet" href="style.css" />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkLab Technologies - AI-Powered Cybersecurity Solutions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header class="header">
-  <div class="container header-container">
-    <div class="logo">SparkLab Technologies</div>
-    <nav class="nav">
-      <ul class="nav-list">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#partners" class="nav-link">Partners</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-      </ul>
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">
+            <a href="#">SparkLab Technologies</a>
+        </div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </div>
-</header>
 
-<section id="home" class="hero">
-  <div class="container hero-container">
-    <div class="hero-text">
-      <h1>AI-Driven Cybersecurity Revolution</h1>
-      <p>At SparkLab Technologies, we harness the power of artificial intelligence to protect your digital future from evolving cyber threats. Real-time threat detection, adaptive defense, and secure business continuity.</p>
-      <a href="#contact" class="btn btn-primary">Contact Us</a>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity AI" />
-    </div>
-  </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Secure Your Future with SparkLab Technologies</h1>
+        <p>Our AI-driven cybersecurity solutions detect and neutralize threats in real-time, protecting your digital world.</p>
+        <a href="#contact" class="btn">Request a Demo</a>
+    </section>
 
-<section id="about" class="about">
-  <div class="container about-container">
-    <h2>About SparkLab Technologies</h2>
-    <p>Founded in Beijing, China, SparkLab Technologies is a leader in AI-powered cybersecurity solutions. Our mission is to safeguard enterprises worldwide by detecting threats faster and responding smarter.</p>
-    <p>We combine cutting-edge research, industry expertise, and adaptive AI models to ensure your digital assets remain protected 24/7.</p>
-    <p>Our commitment to innovation and customer success makes us the trusted partner for businesses in the digital age.</p>
-  </div>
-</section>
+    <!-- Solutions Section -->
+    <section class="solutions" id="solutions">
+        <h2>Our Cybersecurity Solutions</h2>
+        <div class="solutions-grid">
+            <div class="solution-card">
+                <h3>AI Threat Detection</h3>
+                <p>Proactively identifies known and emerging threats, including zero-day attacks, with advanced machine learning.</p>
+            </div>
+            <div class="solution-card">
+                <h3>Autonomous Response</h3>
+                <p>Neutralizes cyber threats in milliseconds with AI-driven automation, minimizing damage and downtime.</p>
+            </div>
+            <div class="solution-card">
+                <h3>Cloud Protection</h3>
+                <p>Secures hybrid and multi-cloud environments with real-time monitoring and adaptive defenses.</p>
+            </div>
+            <div class="solution-card">
+                <h3>Predictive Analytics</h3>
+                <p>Leverages AI to anticipate and prevent cyber incidents with actionable insights and risk assessment.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="services" class="services">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="services-grid">
-      <article class="service-card">
-        <i class="fas fa-brain service-icon"></i>
-        <h3>AI Threat Detection</h3>
-        <p>Our advanced machine learning algorithms monitor network activity 24/7 to identify even the most subtle anomalies that indicate cyber threats.</p>
-        <ul>
-          <li>Real-time threat intelligence updates</li>
-          <li>Behavioral analytics to detect insider threats</li>
-          <li>Automated response to contain attacks instantly</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <i class="fas fa-network-wired service-icon"></i>
-        <h3>Adaptive Network Defense</h3>
-        <p>Dynamic and evolving defense mechanisms that adapt to new attack vectors, ensuring continuous protection.</p>
-        <ul>
-          <li>AI-driven firewall and IDS systems</li>
-          <li>Self-learning network segmentation</li>
-          <li>Zero-trust architecture integration</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <i class="fas fa-shield-alt service-icon"></i>
-        <h3>Data Protection & Encryption</h3>
-        <p>Comprehensive data security solutions to safeguard sensitive information across all platforms.</p>
-        <ul>
-          <li>End-to-end encryption</li>
-          <li>Compliance with GDPR, HIPAA, and CCPA</li>
-          <li>Secure cloud storage solutions</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <i class="fas fa-cloud-upload-alt service-icon"></i>
-        <h3>Cloud Security Auditing</h3>
-        <p>In-depth analysis of your cloud infrastructure to uncover vulnerabilities and fortify your defenses.</p>
-        <ul>
-          <li>Risk assessment and mitigation planning</li>
-          <li>Continuous monitoring and reporting</li>
-          <li>Incident response preparedness</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <i class="fas fa-user-shield service-icon"></i>
-        <h3>Identity & Access Management</h3>
-        <p>Robust IAM solutions to control user access and prevent unauthorized data breaches.</p>
-        <ul>
-          <li>Multi-factor authentication</li>
-          <li>Role-based access control</li>
-          <li>Single Sign-On (SSO) integration</li>
-        </ul>
-      </article>
-    </div>
-  </div>
-</section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About SparkLab Technologies</h2>
+        <p>Founded in 2022 in Beijing, China, SparkLab Technologies is a global leader in AI-powered cybersecurity. Our mission is to empower organizations with innovative, self-learning AI solutions to combat evolving cyber threats. With a team of world-class experts, we deliver unmatched security for businesses worldwide.</p>
+    </section>
 
-<section id="partners" class="partners">
-  <div class="container">
-    <h2>Our Partners</h2>
-    <ul class="partners-list">
-      <li>Λ I M 1</li>
-      <li>Matchpoint Sports Bar & Events</li>
-    </ul>
-  </div>
-</section>
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <h2>Our Trusted Partners</h2>
+        <div class="partners-grid">
+            <div class="partner-card">
+                <h3>Λ I M 1</h3>
+                <p>A technology innovator collaborating with us to advance AI-driven cybersecurity solutions.</p>
+            </div>
+            <div class="partner-card">
+                <h3>Matchpoint Sports Bar & Events</h3>
+                <p>A key partner supporting our cybersecurity awareness initiatives through community events.</p>
+            </div>
+        </div>
+    </section>
 
-<section id="contact" class="contact">
-  <div class="container contact-container">
-    <h2>Contact SparkLab Technologies</h2>
-    <form id="contact-form" class="contact-form" onsubmit="return false;">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
-    <div class="contact-info">
-      <p><strong>Email:</strong> <a href="mailto:sparklabtechnologies@gmail.com">sparklabtechnologies@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+8613073342592">+86 13073342592</a></p>
-      <p><strong>Website:</strong> <a href="https://sparklabtechnologies.com" target="_blank" rel="noopener noreferrer">sparklabtechnologies.com</a></p>
-      <div class="social-icons">
-        <a href="https://instagram.com/skltechnologies" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://facebook.com/sparklabtechnologies" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://x.com/skltechnologies" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-      </div>
-    </div>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.711208392375!2d116.391191315674!3d39.90621797942427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f050af7e9b6427%3A0x7e2b99ff23b7bf55!2sBeijing%2C%20China!5e0!3m2!1sen!2sus!4v1690342521234!5m2!1sen!2sus"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Beijing Location"
-      ></iframe>
-    </div>
-  </div>
-</section>
+    <!-- Resources Section (Carousel) -->
+    <section class="resources" id="resources">
+        <h2>Resources</h2>
+        <div class="carousel">
+            <div class="carousel-item">
+                <h3>Whitepaper: AI in Cybersecurity</h3>
+                <p>Explore how AI transforms threat detection and response in our latest whitepaper.</p>
+                <a href="#" class="btn">Download Now</a>
+            </div>
+            <div class="carousel-item">
+                <h3>Case Study: Enterprise Security</h3>
+                <p>Learn how SparkLab protected a global enterprise from a sophisticated attack.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="carousel-item">
+                <h3>Webinar: Future of Cyber Defense</h3>
+                <p>Join our experts to discuss the role of AI in modern cybersecurity.</p>
+                <a href="#" class="btn">Register Now</a>
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button class="carousel-prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="carousel-next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </section>
 
-<footer class="footer">
-  <div class="container footer-container">
-    <p>&copy; <span id="year"></span> SparkLab Technologies. All rights reserved.</p>
-  </div>
-</footer>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p>Connect with SparkLab Technologies to explore how our AI solutions can secure your organization.</p>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p style="margin-top: 20px;">Email: <a href="mailto:sparklabtechnologies@gmail.com">sparklabtechnologies@gmail.com</a></p>
+    </section>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/8613073342592" class="whatsapp-btn" target="_blank" aria-label="WhatsApp Chat">
-  <i class="fab fa-whatsapp"></i>
-</a>
+    <!-- Footer -->
+    <footer>
+        <p>SparkLab Technologies<br>Beijing, China</p>
+        <p>&copy; 2025 SparkLab Technologies. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/skltechnologies" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/skltechnologies" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/sparklabtechnologies" target="_blank"><i class="fab fa-facebook"></i></a>
+        </div>
+    </footer>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
