@@ -8,6 +8,7 @@
 body {
     background-color: #1A1A1A;
     color: #FFFFFF;
+    line-height: 1.6;
 }
 
 /* Navbar */
@@ -21,7 +22,7 @@ nav {
     width: 100%;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav .logo a {
@@ -29,6 +30,11 @@ nav .logo a {
     font-size: 26px;
     font-weight: bold;
     text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav .logo a:hover {
+    color: #D94A1F;
 }
 
 nav ul {
@@ -41,7 +47,7 @@ nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
@@ -264,6 +270,7 @@ nav ul li a:hover {
 
 .carousel-controls {
     margin-top: 20px;
+    text-align: center;
 }
 
 .carousel-controls button {
