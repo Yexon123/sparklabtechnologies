@@ -1,7 +1,19 @@
-// Set current year dynamically in footer
+// script.js
+
+// Insertar año actual en el footer
 document.addEventListener('DOMContentLoaded', () => {
-  const year = document.getElementById('year');
-  if (year) {
-    year.textContent = new Date().getFullYear();
+  const yearSpan = document.getElementById('year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  // Manejar envío de formulario
+  const form = document.getElementById('contact-form');
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you for contacting SparkLab Technologies! We will get back to you soon.');
+      form.reset();
+    });
   }
 });
