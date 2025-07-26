@@ -1,111 +1,124 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SparkLab Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SparkLab Technologies | Cybersecurity & AI Solutions</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- SIDEBAR NAVIGATION -->
-  <nav class="sidebar">
-    <ul>
-      <li><a href="#hero">Home</a></li>
-      <li><a href="#services">Solutions</a></li>
-      <li><a href="#advantages">Why Choose Us</a></li>
-      <li><a href="#partners">Partners</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="#location">Location</a></li>
-    </ul>
-  </nav>
+<header class="header">
+  <div class="container header-container">
+    <div class="logo">SparkLab Technologies</div>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#partners" class="nav-link">Partners</a></li>
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-  <!-- HERO -->
-  <section id="hero" class="section hero">
-    <div class="container">
-      <h1>SparkLab Technologies</h1>
-      <p>Your digital fortress. AI-driven cybersecurity to protect your future.</p>
-      <a href="#contact" class="btn">Request a Consultation</a>
+<section id="home" class="hero">
+  <div class="container hero-container">
+    <div class="hero-text">
+      <h1>Revolutionizing Digital Security with AI</h1>
+      <p>Protect your data, detect threats in real-time, and ensure your business continuity with SparkLab Technologies.</p>
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
     </div>
-  </section>
-
-  <!-- SOLUTIONS -->
-  <section id="services" class="section light">
-    <h2>Our Cybersecurity Solutions</h2>
-    <div class="cards">
-      <div class="card">🛡️ Threat Detection in Real-Time</div>
-      <div class="card">🧠 AI-based Vulnerability Analysis</div>
-      <div class="card">☁️ Cloud Security & Audits</div>
-      <div class="card">🔒 Data Encryption & Protection</div>
-      <div class="card">⚙️ Enterprise Integration</div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769?auto=format&fit=crop&w=800&q=80" alt="Cybersecurity illustration" />
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ADVANTAGES -->
-  <section id="advantages" class="section dark">
-    <h2>Why Choose SparkLab?</h2>
-    <ul>
-      <li>✅ Advanced AI technology that evolves with threats</li>
-      <li>✅ 24/7 monitoring and real-time response</li>
-      <li>✅ Scalable solutions for startups to large enterprises</li>
-      <li>✅ Based in Beijing with global support</li>
-    </ul>
-  </section>
-
-  <!-- PARTNERS -->
-  <section id="partners" class="section light">
-    <h2>Our Partners</h2>
-    <div class="partners">
-      <p>Λ I M 1</p>
-      <p>Matchpoint Sports Bar & Events</p>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <div class="contact-info">
-      <p>📧 Email: <a href="mailto:sparklabtechnologies@gmail.com">sparklabtechnologies@gmail.com</a></p>
-      <p>📞 Phone: <a href="tel:+8613073342592">+86 13073342592</a></p>
-      <p>🌐 Website: <a href="https://sparklabtechnologies.com" target="_blank">sparklabtechnologies.com</a></p>
-      <div class="social-icons">
-        <a href="https://instagram.com/skltechnologies" target="_blank">📸</a>
-        <a href="https://facebook.com/sparklabtechnologies" target="_blank">📘</a>
-        <a href="https://x.com/skltechnologies" target="_blank">❌</a>
+<section id="services" class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-shield-alt service-icon"></i>
+        <h3>Real-Time Threat Detection</h3>
+        <p>AI-powered monitoring to identify and neutralize cyber threats instantly.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-robot service-icon"></i>
+        <h3>AI Vulnerability Analysis</h3>
+        <p>Advanced algorithms analyze vulnerabilities before they can be exploited.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-cloud service-icon"></i>
+        <h3>Cloud Security Auditing</h3>
+        <p>Comprehensive security audits tailored to your cloud infrastructure.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-lock service-icon"></i>
+        <h3>Data Protection & Encryption</h3>
+        <p>Cutting-edge encryption methods safeguarding sensitive information.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- LOCATION -->
-  <section id="location" class="section light">
-    <h2>Our Location</h2>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps?q=Beijing,+China&output=embed"
-        width="100%"
-        height="300"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"></iframe>
+<section id="partners" class="partners">
+  <div class="container">
+    <h2 class="section-title">Partners</h2>
+    <ul class="partners-list">
+      <li>Λ I M 1</li>
+      <li>Matchpoint Sports Bar & Events</li>
+    </ul>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-container">
+    <h2 class="section-title">About SparkLab Technologies</h2>
+    <p>Based in Beijing, China, SparkLab Technologies is dedicated to pioneering AI-driven cybersecurity solutions. Our team of experts works tirelessly to protect businesses worldwide from evolving digital threats.</p>
+    <p>We combine innovation, precision, and adaptability to secure your digital future with unmatched reliability.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-container">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:sparklabtechnologies@gmail.com">sparklabtechnologies@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+8613073342592">+86 13073342592</a></p>
+      <p><strong>Website:</strong> <a href="https://sparklabtechnologies.com" target="_blank" rel="noopener noreferrer">sparklabtechnologies.com</a></p>
+      <div class="social-icons">
+        <a href="https://instagram.com/skltechnologies" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://facebook.com/sparklabtechnologies" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/skltechnologies" target="_blank" aria-label="X"><i class="fab fa-x-twitter"></i></a>
+      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- FOOTER -->
-  <footer>
+<footer class="footer">
+  <div class="container footer-container">
     <p>&copy; <span id="year"></span> SparkLab Technologies. All rights reserved.</p>
-  </footer>
+  </div>
+</footer>
 
-  <!-- WHATSAPP -->
-  <a class="whatsapp" href="https://wa.me/8613073342592" target="_blank">💬</a>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/8613073342592" class="whatsapp-btn" target="_blank" aria-label="WhatsApp Chat">
+  <i class="fab fa-whatsapp"></i>
+</a>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
