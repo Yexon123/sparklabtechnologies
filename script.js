@@ -33,4 +33,4 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
     currentIndex = (currentIndex - 1 + items.length) % items.length;
     updateCarousel();
-});
+}); 
